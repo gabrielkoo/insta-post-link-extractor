@@ -11,7 +11,7 @@ Users could have been enjoying other contents in the feed, but now they are dist
 
 Another way if you are using **iOS 15 or later**, is to take a screenshot of the current screen in Instagram App and use the **"Live Text"** feature to copy the link from the image. However, this is not reliable due to these two reasons:
 
-This is a **workaround** to extract links from an Instagram post.
+With this repo, I present a **workaround** with iOS Shortcuts and a lightweight AWS Serverless Application backend to extract links from an Instagram post - much faster and much more handy.
 
 Comparsion of three different methods:
 Method | Step by step | Live Text | This Shortcut |

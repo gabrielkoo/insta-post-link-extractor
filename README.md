@@ -9,6 +9,9 @@
 One of the most common ways is to add a link in the bio, and then add a caption like **"Link in bio"**. However, this is not ideal as it requires the user to click on the profile, and then click on the link in the bio.
 Users could have been enjoying other contents in the feed, but now they are distracted by the **"Link in bio"** caption as they are forced to click on the profile to find the link. Also, this must be done by the content creator.
 
+Another way, which I would not recommend - is to memorize the link, then type it manually in the browser. You have to go back to the Instagram App a few times
+if you are not confident with your short term memory.
+
 For most of the users, you may need to step by step:
 1. Copy the post link.
 2. Paste the link in a browser.

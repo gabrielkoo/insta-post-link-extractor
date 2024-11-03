@@ -1,0 +1,57 @@
+AWSTemplateFormatVersion: '2010-09-09'
+
+Description: |
+  InstaPostLinkExtractor API, which extracts links from a Instagram post's description,
+  as Instagram does not make links in post descriptions clickable due to security reasons.
+
+Transform: 'AWS::Serverless-2016-10-31'
+
+Resources:
+  InstaPostLinkExtractorFunction:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: src/handler.lambda_handler
+      Description: 'Extracts links from a Instagram post description'
+      Runtime: python3.12
+      MemorySize: 128
+      Timeout: 10
+      Events:
+        InstaPostLinkExtractorApi:
+          Type: Api
+          Properties:
+            Path: /insta-post-link-extractor
+            Method: post
+            RestApiId:
+              Ref: InstaPostLinkExtractorApi
+            Auth:
+              ApiKeyRequired: true
+
+  InstaPostLinkExtractorApi:
+    Type: 'AWS::Serverless::Api'
+    Properties:
+      Name: InstaPostLinkExtractorApi
+      Description: 'API for extracting links from a Instagram post description'
+      StageName: prod
+      EndpointConfiguration: REGIONAL
+      ApiKeySourceType: HEADER
+      Auth:
+        UsagePlan:
+          CreateUsagePlan: PER_API
+          Description: 'Usage plan for InstaPostLinkExtractorApi'
+          UsagePlanName: 'InstaPostLinkExtractorUsagePlan'
+          Quota:
+            Limit: 1024
+            Period: DAY
+          Throttle:
+            BurstLimit: 16
+            RateLimit: 1
+
+Outputs:
+  InstaPostLinkExtractorApi:
+    Description: 'API Gateway endpoint URL for Prod stage for InstaPostLinkExtractorApi'
+    Value:
+      !Sub 'https://${InstaPostLinkExtractorApi}.execute-api.${AWS::Region}.amazonaws.com/prod/insta-post-link-extractor/'
+  InstaPostLinkExtractorApiApiKeyConsoleUrl:
+    Description: 'API Gateway API Key Console URL for InstaPostLinkExtractorApi'
+    Value:
+      !Sub 'https://${AWS::Region}.console.aws.amazon.com/apigateway/main/api-keys/${InstaPostLinkExtractorApiApiKey}?region=${AWS::Region}'

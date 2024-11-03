@@ -10,13 +10,13 @@ Another way if you are using iOS 15 or later, is to take a screenshot of the cur
 
 This is a workaround to extract links from an Instagram post.
 
-Comparsion of three different methods:
-Field | Link in Bio | Step by step | Live Text | This Shortcut |
----|---|---|---|---
-Time | 10s | 20s | 10s | 5s |
-Reliability | High | High | Low | High |
-Description | Distracting user from the original content, requires the content creator to maintain the link list. | Very distracting. Requires user to copy post link, re-open in a browser, then manual drag and highlight the link. | Not reliable | |
-Media | N/A | <img src="media/slowest-way.gif" width="120px" /> | <img src="media/live-text-way.gif" width="240px" />" | <img src="media/shortcuts-way.gif" width="240px" />
+Comparsion of three different methods, in speed, reliability, and user experience:
+Link in Bio | Step by step | Live Text | This Shortcut |
+---|---|---|---
+10s | 20s | 10s | 5s |
+High | High | Low | High |
+Distracting user from the original content, requires the content creator to maintain the link list. | Very distracting. Requires user to copy post link, re-open in a browser, then manual drag and highlight the link. | Not reliable | |
+N/A | <img src="media/slowest-way.gif" width="240px" /> | <img src="media/live-text-way.gif" width="240px" />" | <img src="media/shortcuts-way.gif" width="240px" />
 
 ## Deployment
 

@@ -10,6 +10,14 @@ Another way if you are using iOS 15 or later, is to take a screenshot of the cur
 
 This is a workaround to extract links from an Instagram post.
 
+Comparsion of three different methods:
+Field | Link in Bio | Step by step | Live Text | This Shortcut |
+---|---|---|---|---
+Time | 10s | 20s | 10s | 5s |
+Reliability | High | High | Low | High |
+Description | Distracting user from the original content, requires the content creator to maintain the link list. | Very distracting. Requires user to copy post link, re-open in a browser, then manual drag and highlight the link. | Not reliable | |
+Media | N/A | <img src="media/slowest-way.gif" width="120px" /> | <img src="media/live-text-way.gif" width="240px" />" | <img src="media/shortcuts-way.gif" width="240px" />
+
 ## Deployment
 
 Open Cloudshell: <https://us-east-1.console.aws.amazon.com/cloudshell/home?region=us-east-1>, or in an AWS Region of your choice.
@@ -17,8 +25,11 @@ Open Cloudshell: <https://us-east-1.console.aws.amazon.com/cloudshell/home?regio
 ```shell
 git clone https://github.com/gabrielkoo/insta-post-link-extractor.git
 cd insta-post-link-extractor
-sam build
-sam deploy --stack-name InstaPostLinkExtractor --guided
+# Avoid `PythonPipBuilder:Validation` error as Python3.12 is not available in Cloudshell yet
+sam build -x InstaPostLinkExtractorFunction
+sam deploy \
+    --stack-name InstaPostLinkExtractor \
+    --guided
 # Follow the prompts
 ```
 

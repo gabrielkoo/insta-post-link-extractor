@@ -4,19 +4,22 @@ Extract links from an Instagram post.
 
 Why? Because Instagram doesn't allow you to add clickable links in the caption of a post. From a few researches the original idea was to avoid spam, as well as let users stay within the Instagram app. However, this is a limitation for content creators who want to share CTA links in their posts.
 
-Instagram Marketers all over the world have been trying to find ways to bypass this limitation. One of the most common ways is to add a link in the bio, and then add a caption like "Link in bio". However, this is not ideal as it requires the user to click on the profile, and then click on the link in the bio.
+Instagram Marketers all over the world have been trying to find ways to bypass this limitation.
+
+One of the most common ways is to add a link in the bio, and then add a caption like "Link in bio". However, this is not ideal as it requires the user to click on the profile, and then click on the link in the bio.
+Users could have been enjoying other contents in the feed, but now they are distracted by the "Link in bio" caption as they are forced to click on the profile to find the link. Also this must be done by the content creator.
 
 Another way if you are using iOS 15 or later, is to take a screenshot of the current screen in Instagram App and use the "Live Text" feature to copy the link from the image. However, this is not reliable due to these two reasons:
 
 This is a workaround to extract links from an Instagram post.
 
-Comparsion of three different methods, in speed, reliability, and user experience:
-Link in Bio | Step by step | Live Text | This Shortcut |
+Comparsion of three different methods:
+Method | Step by step | Live Text | This Shortcut |
 ---|---|---|---
-10s | 20s | 10s | 5s |
-High | High | Low | High |
-Distracting user from the original content, requires the content creator to maintain the link list. | Very distracting. Requires user to copy post link, re-open in a browser, then manual drag and highlight the link. | Not reliable | |
-N/A | <img src="media/slowest-way.gif" width="240px" /> | <img src="media/live-text-way.gif" width="240px" />" | <img src="media/shortcuts-way.gif" width="240px" />
+Speed | 20s | 10s | 5s |
+Reliability | High | Low | High |
+Description | Distracting user from the original content, requires the content creator to maintain the link list. | Very distracting. Requires user to copy post link, re-open in a browser, then manual drag and highlight the link. | Not reliable | |
+Sample | <img src="media/slowest-way.gif" width="240px" /> | <img src="media/live-text-way.gif" width="240px" />" | <img src="media/shortcuts-way.gif" width="240px" />
 
 ## Deployment
 
